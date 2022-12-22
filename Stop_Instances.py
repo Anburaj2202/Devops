@@ -1,7 +1,7 @@
 import boto3
-import os
-Access_Key = str(os.getenv("Access_Key"))
-Secret_Key = str(os.getenv("Secret_Key"))
+import sys
+Access_Key = sys.argv[0]
+Secret_Key = sys.argv[1]
 print(Access_Key,Secret_Key)
 ec2 = boto3.client('ec2',region_name = "eu-central-1",aws_access_key_id = Access_Key, aws_secret_access_key = Secret_Key)
 response = ec2.describe_instances()
