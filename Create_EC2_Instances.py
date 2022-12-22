@@ -20,9 +20,9 @@ instances = ec2.create_instances(
         SecurityGroupIds=[ 'sg-003603580b84ab33e', ],
         SubnetId='subnet-074b1610578134cdb',
         BlockDeviceMappings=[
-        {	
-        	'DeviceName': '/dev/xvda',
-            'Ebs': {
-                'VolumeSize': 20,
-                'VolumeType': 'gp2' }, },],
+        {
+                'DeviceName': '/dev/xvda',
+                 'Ebs': {
+                         'VolumeSize': 20,
+                        'VolumeType': 'gp2' }, },],
     )
