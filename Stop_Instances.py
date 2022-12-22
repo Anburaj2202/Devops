@@ -1,7 +1,7 @@
 import boto3
 
-Access_Key = ""
-Secret_Key = ""
+# Access_Key = ""
+# Secret_Key = ""
 ec2 = boto3.client('ec2',region_name = "eu-central-1",aws_access_key_id = Access_Key, aws_secret_access_key = Secret_Key)
 response = ec2.describe_instances()
 Reservations = response["Reservations"]
