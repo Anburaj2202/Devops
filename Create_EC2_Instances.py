@@ -9,8 +9,6 @@ Instance_Numbers = int(os.getenv("Quantity"))
 # ami-0a261c0e5f51090b1
 # Access_Key = (str(input("Enter the Access Key: ")))
 # Secret_Key = (str(input("Enter the Secret Key: ")))
-Access_Key = str(os.getenv("Access_Key"))
-Secret_Key = str(os.getenv("Secret_Key"))
 ec2 = boto3.resource('ec2',region_name = "eu-central-1")
 instances = ec2.create_instances(
         ImageId= AMI_ID,
