@@ -18,11 +18,11 @@ instances = ec2.create_instances(
         InstanceType="t2.micro",
         KeyName="Key_pair_Anbu",
         SecurityGroupIds=[ 'sg-003603580b84ab33e', ],
-        SubnetId='subnet-074b1610578134cdb',
-        BlockDeviceMappings=[
-        {
-                'DeviceName': '/dev/xvda',
-                 'Ebs': {
-                         'VolumeSize': 20,
-                        'VolumeType': 'gp2' }, },],
+        SubnetId='subnet-074b1610578134cdb'
+#         BlockDeviceMappings=[
+#         {
+#                 'DeviceName': '/dev/xvda',
+#                  'Ebs': {
+#                          'VolumeSize': 20,
+#                         'VolumeType': 'gp2' }, },],
     )
